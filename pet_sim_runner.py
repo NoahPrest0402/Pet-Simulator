@@ -36,25 +36,31 @@ def pet_simulator():
         print("")
         if action == "1":
             ps.Pet.feed(pet)
+            ps.Pet.random_event(pet)
             pet.show_status()
             print("")
         elif action == "2":
             ps.Pet.play(pet)
+            ps.Pet.random_event(pet)
             pet.show_status()
             print("")
         elif action == "3":
             ps.Pet.sleep(pet)
+            ps.Pet.random_event(pet)
             pet.show_status()
             print("")
         elif action == "4":
             if pet_type == "1":
                 ps.Dog.special_ability(pet)
+                ps.Pet.random_event(pet)
                 pet.show_status()
             elif pet_type == "2":
                 ps.Cat.special_ability(pet)
+                ps.Pet.random_event(pet)
                 pet.show_status()
             elif pet_type == "3":
                 ps.Dragon.special_ability(pet)
+                ps.Pet.random_event(pet)
                 pet.show_status()
             print("")
         elif action == "5":
